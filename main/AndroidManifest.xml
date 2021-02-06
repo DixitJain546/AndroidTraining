@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quinbay.androidtraining">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidTraining">
+        <activity android:name=".views.HandlerActivity"></activity>
+        <activity android:name=".views.NestedFragmentCommunicationActivity" />
+        <activity android:name=".views.FragmentRotationActivity" />
+        <activity android:name=".views.ThirdFragmentCommunication" />
+        <activity android:name=".views.SecondFragmentCommunicationActivity" />
+        <activity android:name=".views.FragmentCommunicationActivity" />
+        <activity android:name=".views.ViewPagerActivity" />
+        <activity android:name=".views.RelativeLayoutExample" />
+        <activity android:name=".views.ConstraintLayoutExample" />
+        <activity android:name=".views.FrameLayoutExample" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity android:name=".views.LinearLayoutExample" />
+        <activity android:name=".views.StaticFragmentActivity" />
+        <activity android:name=".views.FragmentActivity" />
+        <activity android:name=".views.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.SecondActivity" />
+        <activity android:name=".views.MainActivity" />
+    </application>
+
+</manifest>
